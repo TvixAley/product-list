@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <link rel="stylesheet" href="src/css/styles.css">
+
+</head>
+<body>
+  <main>
+    <h1 class="visually-hidden">Desserts Catalog - Add Your Favorite Sweets to the Cart</h1>
+
+    <section class="product-list" aria-label="Product List">
+      <h2 class="product-list__title text--preset-1">Desserts</h2>
+      <ul class="product-list__grid">
+        <!-- place for products -->
+      </ul>
+    </section>
+
+    <aside class="shopping-cart" aria-label="Shopping Cart">
+      <h2 class="shopping-cart__title text--preset-2">Your Cart (0)</h2>
+      <div class="empty-cart">
+        <img class="empty-cart__text" src="assets/images/illustration-empty-cart.svg" alt="" width="128" height="128">
+        <p class="empty-cart__text text--preset-4--bold">Your added items will appear here</p>
+      </div>
+      <div class="shopping-cart__products">
+        <!-- place for cart items -->
+      </div>
+      <div class="active-cart" style="display: none;">
+        <div class="active-cart__total">
+          <span class="active-cart__total-text text--preset-4">Order Total</span>
+          <span class="active-cart__total-price text--preset-2">$0.00</span>
+        </div>
+        <div class="active-cart__carbon-info text--preset-4">
+          <img src="assets/images/icon-carbon-neutral.svg" alt="">
+          This is a <b class="text--preset-4--bold">carbon-neutral</b> delivery
+        </div>
+        <button type="button" class="active-cart__confirm-button">Confirm Order</button>
+      </div>
+      
+    </aside>
+  </main>
+
+  <script src="src/js/script.js"></script>
+</body>
+</html>
